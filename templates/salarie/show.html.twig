@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails pour {{salarie.nom | capitalize}}  {{salarie.prenom | capitalize}}{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
+    table th {text-align: right;}
+</style>
+
+<div class="example-wrapper">
+    <h1>Détails d'un salarié ✅</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nom :</th>
+                <td>{{salarie.nom | upper}}</td>
+            </tr>
+            <tr>
+                <th>Prénom :</th>
+                <td>{{salarie.prenom | capitalize}}</td>
+            </tr>
+            <tr>
+                <th>Né le :</th>
+                <td>{{salarie.dateNaissance | date("d/m/Y")}}</td>
+            </tr>
+            <tr>
+                <th>Adresse :</th>
+                <td>{{salarie.adresse}}</td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td>{{salarie.cp}}</td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td>{{salarie.ville | upper}}</td>
+            </tr>
+            <tr>
+                <th>Embauché le :</th>
+                <td>{{salarie.dateEmbauche | date("d/m/Y")}}</td>
+            </tr>
+            <tr>
+                <th>Entreprise :</th>
+                <td>{{salarie.entreprise.raisonSociale | upper}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+{% endblock %}
