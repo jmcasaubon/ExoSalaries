@@ -23,6 +23,9 @@
     "doctrine/dbal": {
         "version": "v2.10.1"
     },
+    "doctrine/deprecations": {
+        "version": "v0.5.3"
+    },
     "doctrine/doctrine-bundle": {
         "version": "2.0",
         "recipe": {
@@ -80,6 +83,18 @@
     },
     "egulias/email-validator": {
         "version": "2.1.15"
+    },
+    "friendsofphp/proxy-manager-lts": {
+        "version": "v1.0.3"
+    },
+    "laminas/laminas-code": {
+        "version": "4.3.0"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.3.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.2.0"
     },
     "monolog/monolog": {
         "version": "2.0.2"
@@ -368,6 +383,9 @@
     },
     "symfony/property-info": {
         "version": "v5.0.4"
+    },
+    "symfony/proxy-manager-bridge": {
+        "version": "v5.2.4"
     },
     "symfony/routing": {
         "version": "4.2",
